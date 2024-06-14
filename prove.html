@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IL NIDO DELLA BUONANOTTE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="prove.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="ilNido.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="home.html" class="active">
+        <img src="img/ASSETSRisorsa 9@3x.png" alt="Logo" height="35px"
+      /></a>
+
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="activities.html"> Activities</a>
+      <a href="ilNido.html">Il Nido</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="img/menu.png" alt="Logo" height="30px" />
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/bagno.png" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/balcone.png" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/cucina.png" style="width: 100%" />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+    <div class="box_nido_1">
+      <h1>Il Nido della Bonanotte 1</h1>
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ex autem
+        incidunt blanditiis sed aspernatur molestiae tenetur dolores provident,
+        beatae quidem veniam ipsum quia animi accusantium cum mollitia est ea.
+      </h2>
+      <div class="box_nido_1_btn"><h2>BOOK NOW</h2></div>
+    </div>
+
+    <div class="foto_mobile">
+      <img src="img/sala.png" style="width: 100%" />
+      <img src="img/sala.png" style="width: 100%" />
+    </div>
+
+    <div class="line"></div>
+    <div class="sez2_box_all"></div>
+    <div class="sez2_box">
+      <h1>LOREM IPSUM</h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est
+        maiores architecto aliquam laborum suscipit! Error voluptatibus atque
+        tempore odio ipsam, accusamus illum, perferendis aliquid numquam
+        accusantium illo nesciunt rerum!
+      </h3>
+      <div class="sez2_box_sotto">
+        <ul class="colonna_sx_list">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <div class="colonna_dx_icons">
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="line_mobile"></div>
+    <div class="sez2_box">
+      <h1>LOREM IPSUM</h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est
+        maiores architecto aliquam laborum suscipit! Error voluptatibus atque
+        tempore odio ipsam, accusamus illum, perferendis aliquid numquam
+        accusantium illo nesciunt rerum!
+      </h3>
+      <div class="sez2_box_sotto">
+        <ul class="colonna_sx_list">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <div class="colonna_dx_icons">
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="line_mobile"></div>
+    <div class="sez2_box">
+      <h1>LOREM IPSUM</h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est
+        maiores architecto aliquam laborum suscipit! Error voluptatibus atque
+        tempore odio ipsam, accusamus illum, perferendis aliquid numquam
+        accusantium illo nesciunt rerum!
+      </h3>
+      <div class="sez2_box_sotto">
+        <ul class="colonna_sx_list">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <div class="colonna_dx_icons">
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="line_mobile"></div>
+    <div class="sez2_box">
+      <h1>LOREM IPSUM</h1>
+      <h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur est
+        maiores architecto aliquam laborum suscipit! Error voluptatibus atque
+        tempore odio ipsam, accusamus illum, perferendis aliquid numquam
+        accusantium illo nesciunt rerum!
+      </h3>
+      <div class="sez2_box_sotto">
+        <ul class="colonna_sx_list">
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+        <div class="colonna_dx_icons">
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <br />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+          <img id="icon" src="img/ASSETSRisorsa 9@3x.png" alt="icon" />
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="box_piante">
+      <img id="piante" src="img/ASSETSRisorsa 9@3x.png" alt="pianta1" />
+      <img id="piante" src="img/ASSETSRisorsa 9@3x.png" alt="pianta2" />
+    </div>
+  </body>
+</html>

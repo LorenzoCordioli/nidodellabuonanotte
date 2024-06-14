@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IL NIDO DELLA BUONANOTTE-HOME</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script src="home.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="home.html" class="active">
+        <img src="img/ASSETSRisorsa 9@3x.png" alt="Logo" height="35px"
+      /></a>
+
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="activities.html"> Activities</a>
+      <a href="ilNido.html">Il Nido</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="img/menu.png" alt="Logo" height="30px" />
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <div class="carousell" style="max-width: 100%">
+      
+      <img class="mySlides" src="img/nido 2/IMG_9380.jpg" />
+<div class="intro">
+        <h1 >ESPLORA I NOSTRI APPARTAMENTI</h1>
+        <h3 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fuga, doloribus iste repellat nobis rerum voluptatibus! Quis tenetur laboriosam facilis cum at perferendis veniam suscipit voluptates, assumenda illo et placeat?</h3>
+      <h2 class="text_pres_link_intro">Nido 2</h2>
+      <h2 class="text_pres_link_intro">Nido 1</h2>
+
+      </div>
+      <img class="mySlides" src="img/nido 2/IMG_4149.jpg" />
+     
+      <img class="mySlides" src="img/nido 2/IMG_4012.jpg" />
+     
+      <img class="mySlides" src="img/nido1/IMG_9714.jpg" />
+      
+      <img class="mySlides" src="img/nido1/IMG_9407.jpg" />
+    
+      <img class="mySlides" src="img/nido1/IMG_1695.jpg" />
+     
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+    </script>
+
+   
+
+    <div class="home_sez1_box">
+      <h1 class="home_sez1_h1 show">
+        LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM
+        NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET .
+      </h1>
+
+      <h2 class="home_sez1_h2 show">
+        <a id="text_pres">
+          My name is Lorenzo Cordioli, also known as: Lori, JJ, Cordioland, Il
+          Duro or Lollo; call me whatever you want, but please don't call me
+          <a id="text_pres_link" href="#home_sez1_1">Mattia Stanga.</a>
+          I am a Graphic Designer, graduated at the
+          <a id="text_pres_link" href="#home_sez1_2">IUAV in Venice</a>
+          and currently a student at the
+          <a id="text_pres_link" href="#home_sez1_3">Milan Polytechnic.</a>
+          Proudly European I consider Verona, Venice, Lisbon, Coruna, Porto,
+          Milan and Val Casies home. Do not hesitate to contact me for projects,
+          consultations, aperitifs, weddings, surfing, cold beers and rosalia
+          concerts. Instead, I advise you not to call me for free jobs, slavery
+          internships, Salvini rallies and<a
+            id="text_pres_link"
+            href="#home_sez1_4"
+          >
+            More club nights.</a
+          >    
+        </a> 
+      </h2>
+      
+        </div>
+      <img src="img/casa.png" id="home_sez1_1">
+    
+    </div>
+  </div>
+  <img src="img/balcone.png" id="home_sez1_2">
+
+</div>
+</div>
+<img src="img/letto.png" id="home_sez1_3">
+
+</div>
+</div>
+<img src="img/cucina.png" id="home_sez1_4">
+
+</div>
+    <script>
+      const sez1 = document.querySelectorAll(".home_sez1_h1 ");
+
+      window.addEventListener("scroll", checkSez1);
+
+      function checkSez1() {
+        const triggerBottom = (window.innerHeight / 5) * 3;
+
+        sez1.forEach((sez) => {
+          const sezTop = sez.getBoundingClientRect().top;
+
+          if (sezTop < triggerBottom) {
+            sez.classList.add("show");
+          } else {
+            sez.classList.remove("show");
+          }
+        });
+      }
+
+      const sez2 = document.querySelectorAll(".home_sez1_h2");
+
+      window.addEventListener("scroll", checkSez2);
+
+      function checkSez2() {
+        const triggerBottom = (window.innerHeight / 5) * 4;
+
+        sez2.forEach((sez) => {
+          const sezTop2 = sez.getBoundingClientRect().top;
+
+          if (sezTop2 < triggerBottom) {
+            sez.classList.add("show");
+          } else {
+            sez.classList.remove("show");
+          }
+        });
+      }
+    </script>
+        <div class="line"></div>
+
+    <div class="sez_2_bakground">
+      <div class="home_sez2">
+       
+        <a href="activities.html#act1">
+          <h1>Sezione 1</h1>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            corrupti corporis reprehenderit! Placeat itaque nisi doloribus ex
+            praesentium cumque iste eligendi.
+          </h3></a
+        >
+      </div>
+
+      <div class="home_sez2">
+        <a href="activities.html#act2"
+          ><div class="home_sez2_img"></div>
+          <h1>Sezione 2</h1>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            corrupti corporis reprehenderit! Placeat itaque nisi doloribus ex
+            praesentium cumque iste eligendi.
+          </h3></a
+        >
+      </div>
+      <div class="home_sez2">
+        <a href="activities.html#act3"
+          ><div class="home_sez2_img"></div>
+          <h1>Sezione 3</h1>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            corrupti corporis reprehenderit! Placeat itaque nisi doloribus ex
+            praesentium cumque iste eligendi.
+          </h3></a
+        >
+      </div>
+      <div class="home_sez2">
+        <a href="activities.html#act4"
+          ><div class="home_sez2_img"></div>
+          <h1>Sezione 4</h1>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            corrupti corporis reprehenderit! Placeat itaque nisi doloribus ex
+            praesentium cumque iste eligendi.
+          </h3></a
+        >
+      </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="home_sez3">
+      <div class="home_sez3_text">
+        <h1>ABOUT US</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          similique corporis quasi laboriosam, debitis molestias distinctio,
+          unde dolor hic, nesciunt qui deserunt impedit ratione odit explicabo
+          harum at itaque sequi.dolor hic, nesciunt qui deserunt impedit ratione
+          odit explicabo harum at itaque sequi. sequi.dolor hic, nesciunt qui
+          deserunt impedit ratione odit explicabo harum at itaque sequi.
+        </h2>
+      </div>
+      <div class="img_sez3"></div>
+    </div>
+
+    <div class="line"></div>
+    <div class="scroll">
+      <div class="RightToLeft">
+        <a href="contact.html">CONTACT US TO GET THE BEST PRICE</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer_sez">
+        <h3 id="title">IL NIDO</h3>
+        <ul>
+          <li>Il Nido 1</li>
+          <li>Il Nido 2</li>
+        </ul>
+      </div>
+
+      <div class="footer_sez">
+        <h3 id="title">ACTIVITIES</h3>
+        <ul>
+          <li>Nei Dintorni</li>
+          <li>Attività</li>
+          <li>Trasporti</li>
+          <li>Ristoranti</li>
+        </ul>
+      </div>
+
+      <div class="footer_sez">
+        <h3 id="title">ABOUT</h3>
+        <ul>
+          <li>La Storia</li>
+          <li>La Famiglia</li>
+        </ul>
+      </div>
+
+      <div class="footer_sez">
+        <h3 id="title">CONTACT</h3>
+        <ul>
+          <li>Posizione</li>
+          <li>Richiedi Info</li>
+        </ul>
+      </div>
+    </div>
+
+  
+    
+
+      <div class="footer_Phone">
+        <h3 >Il Nido Della Buonanotte</h3>
+        
+      </div>
+   
+  </body>
+</html>
