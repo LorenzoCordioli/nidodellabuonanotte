@@ -93,7 +93,7 @@ ul {
   margin-top: 65px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: aquamarine;
+  background-color: rgb(255, 127, 165);
   border-radius: 10px;
 }
 .mySlides {
@@ -130,150 +130,130 @@ ul {
   background-color: rgba(84, 65, 255);
 }
 
+/* scritta dopo carosello */
+
 .home_sez1_box {
   height: fit-content;
-  background-color: transparent;
   display: block;
   width: 100%;
 }
 
 .home_sez1_h1 {
-  width: 80vw;
   padding: 30px;
   padding-top: 50px;
-  transform: translateX(150%);
-  transition: transform 0.3s ease-in;
-  color: #ffffff;
+
+  color: #000000;
   z-index: 1;
-  mix-blend-mode: difference;
-}
-.home_sez1_h1.show {
-  transform: translateX(0);
 }
 
 .home_sez1_h2 {
-  width: 50vw;
-  display: inline-block;
+  width: 80vw;
   padding: 30px;
-  padding-bottom: 120px;
-  padding-left: 150px;
-  transform: translateX(150%);
-  transition: transform 0.3s ease-in;
-  color: #ffffff;
-  mix-blend-mode: difference;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  color: #000000;
 }
-
-.home_sez1_h2.show {
-  transform: translateX(0);
-}
-#text_pres_link {
-  color: rgba(220, 62, 0, 0.885);
-}
-#home_sez1_1 {
-  display: none;
-  background-color: blue;
-  position: absolute;
-  top: 120vh;
-  left: 50vw;
-  z-index: -1;
-  width: 40vw;
-}
-#home_sez1_2 {
-  display: none;
-
-  background-color: blue;
-  position: absolute;
-  top: 120vh;
-  left: 50vw;
-  z-index: -1;
-  width: 40vw;
-}
-#home_sez1_3 {
-  display: none;
-
-  background-color: blue;
-  position: absolute;
-  top: 120vh;
-  left: 50vw;
-  z-index: -1;
-  width: 40vw;
-}
-#home_sez1_4 {
-  display: none;
-
-  background-color: blue;
-  position: absolute;
-  top: 120vh;
-  left: 50vw;
-  z-index: -1;
-  width: 40vw;
-}
-#home_sez1_1:target {
-  display: block;
-  z-index: -1;
-}
-#home_sez1_2:target {
-  display: block;
-  z-index: -1;
-}
-#home_sez1_3:target {
-  display: block;
-  z-index: -1;
-}
-#home_sez1_4:target {
-  display: block;
-  z-index: -1;
-}
-
+/*contACT US*/
 .sez_2_bakground {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: center;
-  background-color: rgba(84, 65, 255);
+  justify-content: left;
+  background-color: rgb(0, 0, 255);
 }
 
-.home_sez2 {
-  height: fit-content;
-  width: 23%;
-  border-radius: 10px;
-  background-color: #000000fe;
-  background-image: url(img/colosseo.png);
-  background-size: 100%;
-  background-position: right;
-  margin: 5px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in 0.1s;
-  overflow: hidden;
-  box-shadow: inset 0 0 4px rgb(52, 52, 52);
-  transition: border-radius 0.2s ease-in;
+.contact {
+  width: 30vw;
+  margin: 30px;
 }
 
-.home_sez2 a {
-  text-decoration: none;
+.right {
+  margin: 30px;
+  width: 50vw;
 }
-.home_sez2:hover {
-  background-color: #dfdfdffe;
-  transform: scale(101%);
+
+.field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Inter;
+  margin-bottom: 22px;
+  transition: 0.3s;
   border-radius: 20px;
 }
 
-.home_sez2 h1 {
-  margin: 30px;
-  margin-bottom: 0px;
-  margin-top: 80px;
-  color: #ffffff;
-  font-size: 24px;
+.field:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.home_sez2 h3 {
-  margin: 30px;
-  margin-top: 0px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #ffffff;
+.name {
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Inter;
+  margin-bottom: 22px;
+  transition: 0.3s;
+  border-radius: 20px;
 }
+
+.name:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Email {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: Inter;
+  margin-bottom: 22px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.Email:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  min-height: 150px;
+  border-radius: 20px;
+}
+
+.BTN {
+  width: 30%;
+  padding: 0.5rem 1rem;
+  background-color: rgb(138, 225, 66);
+  color: #000000;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  text-align: center;
+  z-index: 1;
+  float: right;
+}
+
+.BTN:hover {
+  background-color: #150061;
+}
+
+.field:focus {
+  border: 2px solid rgba(0, 0, 0, 0.47);
+  background-color: #fff;
+}
+
+/*about */
 
 .home_sez3 {
   height: fit-content;
@@ -309,36 +289,6 @@ ul {
 
   background-size: cover;
   background-position: center;
-}
-
-/*barra about*/
-
-.scroll {
-  overflow: hidden;
-  background-color: rgba(84, 65, 255);
-}
-
-.scroll div {
-  display: flex;
-}
-
-.scroll a {
-  color: rgb(0, 0, 0);
-  overflow: hidden;
-  font-family: Inter;
-  font-size: 45px;
-  line-height: 60px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.RightToLeft {
-  animation: RightToLeft 15s infinite linear;
-}
-
-.RightToLeft :hover {
-  animation-play-state: paused;
-  text-decoration: underline;
 }
 
 @keyframes RightToLeft {
@@ -472,12 +422,9 @@ ul {
   .home_sez1_h1 {
     width: 100%;
     padding: 0px;
-    padding-top: 0px;
-    transform: translateX(150%);
-    transition: transform 0.3s ease-in;
-    color: #000000;
+    padding-top: 30px;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .home_sez1_h2 {
@@ -486,62 +433,113 @@ ul {
     padding: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    transform: translateX(150%);
-    transition: transform 0.3s ease-in;
+
     color: #000000;
     margin: 10px;
     margin-bottom: 60px;
   }
 
-  #home_sez1_h3:target {
-    display: none;
-  }
-
+  /*contACT US*/
   .sez_2_bakground {
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: 100%;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .home_sez2 {
+    flex-direction: column;
+    justify-content: left;
+    background-color: rgb(0, 0, 255);
     height: fit-content;
-    width: 90%;
-    border-radius: 10px;
-    background-color: #a9a9a9fe;
-    background-image: url(img/gardaland.png);
-    margin: 10px;
-    transition: transform 0.3s ease-in 0.1s;
-    overflow: hidden;
-    box-shadow: inset 0 0 4px rgb(52, 52, 52);
-    transition: border-radius 0.2s ease-in;
   }
 
-  .home_sez2 a {
-    text-decoration: none;
+  .contact {
+    width: 100vw;
+    margin: 00px;
+    padding: 10px;
   }
-  .home_sez2:hover {
-    background-color: #6c48bafe;
-    transform: scale(101%);
+
+  .right {
+    margin: 0px;
+    padding: 10px;
+    width: 80vw;
+  }
+
+  .field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: Inter;
+    margin-bottom: 22px;
+    transition: 0.3s;
     border-radius: 20px;
   }
 
-  .home_sez2 h1 {
-    margin: 10px;
-    margin-bottom: 0px;
-    margin-top: 40px;
-    color: #ffffff;
-    font-size: 32px;
+  .field:hover {
+    background-color: rgba(0, 0, 0, 0.5);
   }
-  .home_sez2 h3 {
-    margin: 10px;
-    margin-top: 0px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffffff;
+  .name {
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: Inter;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+
+  .name:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .Email {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: Inter;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    border-radius: 20px;
+  }
+
+  .Email:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  textarea {
+    min-height: 150px;
+    border-radius: 20px;
+  }
+
+  .BTN {
+    width: 30%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(138, 225, 66);
+    color: #000000;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    font-family: Inter;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1;
+    float: right;
+  }
+
+  .BTN:hover {
+    background-color: #150061;
+  }
+
+  .field:focus {
+    border: 2px solid rgba(0, 0, 0, 0.47);
+    background-color: #fff;
   }
 
   .home_sez3 {
@@ -561,10 +559,10 @@ ul {
   .home_sez3 h1 {
     margin-top: 50px;
     color: #000000;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   .home_sez3 h2 {
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 20px;
   }
 
